@@ -1,1 +1,173 @@
+/* Reset styles for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top header: Logo and navigation with dark background */
+.top-header {
+  background-color: #11111F;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logo img {
+  width: 120px; /* Limit logo width, maintain aspect ratio */
+  height: auto;
+}
+
+.top-header .navigation {
+  display: flex; /* Align navigation links horizontally */
+  align-items: center;
+}
+
+.top-header .navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.top-header .navigation a:hover {
+  color: gray; /* Change link color on hover */
+}
+
+.sep {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* Lower header: Secondary navigation bar */
+.lower-header {
+  background-color: #252F3D;
+  padding: 7.5px 10px;
+  display: flex;
+  justify-content: left;
+}
+
+.lower-header .navigation a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.lower-header .navigation a:hover {
+  color: gray;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #252F3D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Layer above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #11111F; /* Darken background on hover */
+}
+
+/* Main content area with background image and centered text */
+.content-area {
+  background-color: #EFC6A8;
+  padding: 20px;
+  margin: 0 50px;
+  min-height: calc(90vh - 50px); /* Responsive height */
+  background-image: url("asstes/429915635_3747899385498954_1847621093343507239_n.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  text-align: center; /* Center heading */
+}
+
+/* Feedback form container */
+.feedback-container {
+  width: 500px;
+  min-height: 400px;
+  margin: 0 auto; /* Center on the page */
+  text-align: center;
+  background-color: #fff;
+  border-radius: 45px;
+  padding: 20px;
+}
+
+/* Star rating system */
+.rating .star {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.rating .star:hover,
+.rating .star.active {
+  filter: brightness(1.5); /* Highlight stars on hover and when selected */
+}
+
+/* Label styling */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Textarea for feedback input */
+textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none; /* Prevent resizing */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in width */
+  border-radius: 25px;
+}
+
+/* Word count display */
+.word-count {
+  text-align: right;
+  margin-top: 5px;
+  color: gray;
+}
+
+/* Submit button styling */
+.S button[type="submit"] {
+  background-color: #11111F;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.S button[type="submit"]:hover {
+  background-color: #11111F; /* Keep the same background on hover */
+}
+
+.S {
+  text-align: right;
+  margin-top: 10px;
+}
 

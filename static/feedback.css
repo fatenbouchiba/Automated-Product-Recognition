@@ -1,1 +1,121 @@
+/* General reset for the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top header: dark background, flex layout for logo and navigation */
+.top-header {
+  background-color: #11111F;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logo img {
+  width: 120px; /* Maintain logo size with aspect ratio */
+  height: auto;
+}
+
+.top-header .navigation {
+  display: flex; /* Horizontal alignment of navigation items */
+  align-items: center;
+}
+
+.top-header .navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.top-header .navigation a:hover {
+  color: gray; /* Change link color on hover */
+}
+
+.sep {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* Lower header: secondary navigation bar */
+.lower-header {
+  background-color: #252F3D;
+  padding: 7.5px 10px;
+  display: flex;
+  justify-content: left;
+}
+
+.lower-header .navigation a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.lower-header .navigation a:hover {
+  color: gray;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #252F3D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure it's above other content */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #11111F; /* Darker background on hover */
+}
+
+/* Main content area */
+.content-area {
+  background-color: #EFC6A8; /* Background color */
+  padding: 20px;
+  margin: 0 50px; /* Horizontal margin */
+  min-height: calc(90vh - 50px); /* Responsive height */
+  background-image: url("assets/429915635_3747899385498954_1847621093343507239_n.png");
+  background-size: cover; /* Stretch background to fill */
+  background-position: center; /* Center the background image */
+  display: flex; /* Center content */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content p {
+  font-size: 28px;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.content button {
+  color: black;
+  font-size: 25px;
+  padding: 10px 40px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+.content button:hover {
+  background-color: transparent; /* Keep background transparent on hover */
+}
 
